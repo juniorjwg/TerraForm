@@ -1,5 +1,6 @@
 provider "aws" {
-  region = "${var.aws_region}"
+  profile = "default"
+  region  = "us-east-2"
 }
 
 module "s3_bucket" {
