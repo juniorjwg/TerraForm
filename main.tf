@@ -1,8 +1,7 @@
 provider "aws" {
-  profile = "default"
-  region  = "us-east-2"
   access_key = "var.my-access-key"
   secret_key = "var.my-secret-key"
+  region  = "us-east-2"
 }
 
 module "s3_bucket" {
@@ -14,5 +13,7 @@ module "s3_bucket" {
   versioning = {
     enabled = true
   }
+
+
 
 }
